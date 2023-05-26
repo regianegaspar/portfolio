@@ -12,7 +12,7 @@
 
 
 <p align="center">
-<img alt="Imagem do Portifólio" src="https://github.com/regianegaspar/portfolio/blob/main/img/projeto.JPG?raw=true" width="100%">
+<img alt="Imagem do Portifólio" src="https://github.com/regianegaspar/portfolio/blob/main/imagens/projeto.JPG?raw=true" width="100%">
 </p>
 
 ## 🚀 Tecnologias
