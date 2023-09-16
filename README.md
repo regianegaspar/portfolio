@@ -11,9 +11,9 @@
 <br>
 
 
-<p align="center">
+<!-- <p align="center">
 <img alt="Imagem do Portifólio" src="https://github.com/regianegaspar/portfolio/blob/main/imagens/projeto.JPG?raw=true" width="100%">
-</p>
+</p> -->
 
 ## 🚀 Tecnologias
 
