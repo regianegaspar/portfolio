@@ -184,6 +184,7 @@ h2{
 .acesse{
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     list-style-type: none;
