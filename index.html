@@ -10,23 +10,31 @@
 </head>
 <body>
     <header>
-        <p>Olá, seja bem vindo!</p>
-        <h1 class="nome">Regiane Gaspar</h1>
-        <p class="texto"> Sou uma dev. Front-End curiosa que gosta de estar em constante aprendizado. Formada em Matemática sempre auxiliei os estudantes com desenvolvimento de soft skills e com isso, desenvolvi as minhas: resiliência, flexibilidade, comunicação, autonomia, criatividade, trabalho sob pressão, entre outras. A capacidade de ensinar e o pensamento analítico sempre foram características marcantes além do constante aprendizado mesmo em tópicos mais complexos.</p>
-        <ul class="links">
-            <li><a href="https://www.linkedin.com/in/regianegaspar/" target="_blank"><img class="icone" src="imagens/linkedin.png" alt="Linkedin"></a></li>
-            <li><a href="https://github.com/regianegaspar" target="_blank"><img class="icone" src="imagens/github.png" alt="Github"></a></li>
-        </ul>
-        <div class="ilustracoes">
-            <div class="img1"><img src="imagens/001.jpg" alt=""></div>
-            <div class="img2"><img src="imagens/002.jpg" alt=""></div>
-            <div class="img3"><img src="imagens/003.jpg" alt=""></div>
-        </div>
+        <nav class="menu">
+            <p>Olá, seja bem vindo!</p>
+            <hr>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#estudos">Estudos</a>
+            
+        </nav>
+        
     </header>
 
     <main>
-        <section class="skills">
-            <h2>Skills</h2>
+        <div class="container">
+            <div id="sobre" class="sobre">
+                <h1 class="nome">Regiane Gaspar</h1>
+                <p class="texto"> Sou uma dev. Front-End curiosa que gosta de estar em constante aprendizado. Formada em Matemática sempre auxiliei os estudantes com desenvolvimento de soft skills e com isso, desenvolvi as minhas. A capacidade de ensinar e o pensamento analítico sempre foram características marcantes além do constante aprendizado mesmo em tópicos mais complexos.</p>
+                <ul class="links">
+                    <li><a href="https://www.linkedin.com/in/regianegaspar/" target="_blank"><img class="icone" src="imagens/linkedin.png" alt="Linkedin"></a></li>
+                    <li><a href="https://github.com/regianegaspar" target="_blank"><img class="icone" src="imagens/github.png" alt="Github"></a></li>
+                </ul>
+            </div>
+        </div>
+     <section class="skills">
+            <h2>Habilidades</h2>
             <p>No decorrer dos meus estudos como desenvolvedora front-end tenho desenvolvido diversas hard-skills.</p>
             <ul class="hard-skills">
                 <li><img src="imagens/html.png" alt="HTML" class="hard"></li>
@@ -35,15 +43,70 @@
             </ul>
         </section>
 
+        
         <section class="projetos">
             <h2>Projetos</h2>
-            <aside>
+            <p>Selecionei alguns projetos realizados em estudos, desafios ou projetos pessoais. Todos eles podem ser encontrados no GitHub.</p>
+
+            <div class="projetos-informacoes">
+
+                <div class="projeto">
+                    <img src="imagens/memoria.gif" alt="Jogo da memória" class="img-projeto">
+                    <div class="informacoes">
+                        <h3>Jogo da memória</h3>
+                        <p>Jogo da memória realizado em estudo da Dio: Desenvolvimento de jogos.</p>
+                        <p>HTML, CSS e JavaScript</p>
+                        <ul class="acesse">
+                            <li><a href="https://regianegaspar.github.io/dio-memoria/" target="_blank">Acesse a demo</a></li>
+                            <li><a href="https://github.com/regianegaspar/dio-memoria" target="_blank">Veja o código</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <img src="imagens/blog-angular.gif" alt="imagem do blog" class="img-projeto">
+                    <div class="informacoes">
+                        <h3>Blog Harry Potter</h3>
+                        <p>Blog realizado em estudo da Dio: Fullstack Java _ Angular.> </p>
+                        <p>HTML, CSS e Angular</p>
+                        <ul class="acesse">
+                            <li><a href="https://regianegaspar.github.io/blog-angular-dio/" target="_blank">Acesse a demo</a></li>
+                            <li><a href="https://github.com/regianegaspar/blog-angular-dio" target="_blank"></a>Veja o código</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="projeto">
+                    <img src="" alt="" class="img-projeto">
+                    <div class="informacoes">
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <ul class="acesse">
+                            <li><a href="" target="_blank"></a></li>
+                            <li><a href="" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="" alt="" class="img-projeto">
+                    <div class="informacoes">
+                        <h3></h3>
+                        <p></p>
+                        <p></p>
+                        <ul class="acesse">
+                            <li><a href="" target="_blank"></a></li>
+                            <li><a href="" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
                 <div class="projeto">
                     <img src="imagens/30dias.gif" alt="30 dias de css" class="img-projeto">
-                    <div class="descricao">
+                    <div class="informacoes">
                         <h3>Desafio 30 dias de CSS</h3>
-                        <p>Desafio realizado em 30 dias para treinar e aprender mais sobre o CSS, durante esse período utilizei e descobri muito sobre o poder do CSS.</p>
-                        <p>Tecnologias utilizadas: HTML e CSS</p>
+                        <p>30 desafios para treinar e aprender mais sobre o CSS, durante esse período utilizei e descobri muito sobre o poder do CSS.</p>
+                        <p>HTML e CSS</p>
                         <ul class="acesse">
                             <li><a href="https://regianegaspar.github.io/30-dias-css/" target="_blank">Acesse a demo</a></li>
                             <li><a href="https://github.com/regianegaspar/30-dias-css" target="_blank">Veja os códigos</a></li>
@@ -52,129 +115,113 @@
                 </div>
 
                 <div class="projeto">
-                    <!-- <img src="" alt=""> -->
-                    <div class="descricao">
+                    <img src="imagens/codelandia.gif" alt="Imagens dos desafios" class="img-projeto">
+                     <div class="informacoes">
                         <h3>Desafios Codelândia</h3>
                         <p>Desafios realizados para colocar em prática os estudos realizados sobre HTML, CSS e JavaScript. Os desafios são propostos no discord da omunidade onde é apresentado um figma para ter como base.</p>
-                        <p>Tecnologias utilizdas: HTML, CSS e JavaCSript</p>
-                        <ul class="acesse">
-                            <!-- <li><a href="#" target="_blank">Acesse o deploy</a></li> -->
+                        <p>HTML, CSS e JavaCSript</p>
+                         <ul class="acesse">
+                            <li><a href="https://regianegaspar.github.io/desafios-codelandia/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/desafios-codelandia" target="_blank">Veja o código</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="projeto">
-                    <img src="imagens/lista.gif" alt="projeto lista de compras" class="img-projeto">
-                    <div class="descricao">
+                <!-- <div class="projeto">
+                    <img src="imagens/lista.gif" alt="projeto lista de compras" class="img-projeto"> 
+                    <div class="informacoes">
                         <h3>Lista de compras</h3>
                         <p>Projeto realizado durante estudos da Alura sobre JavaScript onde a proposta era criar uma lista de compras onde o usuário pode adicionar, editar ou remover itens e selecionar os itens comprados. Também foi necessário verificar se o item já tinha sido acrescentado na lista.</p>
-                        <p>Tecnologias utilizdas: HTML, CSS e JavaScript</p>
+                        <p>HTML, CSS e JavaScript</p>
                         <ul class="acesse">
                             <li><a href="https://regianegaspar.github.io/lista-compras-alura/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/lista-compras-alura" target="_blank">Veja o código</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
+            
 
                 <div class="projeto">
                     <img src="imagens/serenatto.gif" alt="imagem do projeto" class="img-projeto">
-                    <div class="descricao">
+                    <div class="informacoes">
                         <h3>Serenatto</h3>
                         <p>Projeto realizado durante estudo na Alura onde utilizei o Bootstrap para construir uma página responsiva de uma cafeteria. Nos estudos com o Bootstrap pude aprender mais sobre Parallax, Offcanvas, Modal e Acordion.</p>
-                        <p>Tecnologias utilizdas: HTML, CSS e Bootstrap</p>
+                        <p>HTML, CSS e Bootstrap</p>
                         <ul class="acesse">
                             <li><a href="https://serenatto-chi.vercel.app/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/bootstrap-serenatto" target="_blank">Veja o código</a></li>
                         </ul>
                     </div>
                 </div>
+<!-- 
                 <div class="projeto">
-                    <img src="imagens/monibank.gif" alt="imagem do projeto" class="img-projeto">
-                    <div class="descricao">
+                    
                         <h3>Monibank</h3>
                         <p>Projeto realizado durante estudo da Alura sobre validação de formulários e envio de imagem usando javaScript.</p>
+                        <img src="imagens/monibank.gif" alt="imagem do projeto" class="img-projeto">
                         <p>Tecnologias utilizdas: HTML, CSS e JavaScript</p>
                         <ul class="acesse">
                             <li><a href="https://monibank-main-chi.vercel.app/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/monibank-main" target="_blank">Veja o código</a></li>
                         </ul>
-                    </div>
-                </div>
 
-                <div class="projeto">
-                    <!-- <img src="" alt=""> -->
-                    <div class="descricao">
+                </div> -->
+
+                <!-- <div class="projeto">
+                    
                         <h3>Alura Books</h3>
                         <p>Projeto realizado durante estudo da Alura em JavaScript. Nele pude colocar em prática os métodos filter, forEach, sort, map e reduce.</p>
+                        <img src="" alt="">
                         <p>Tecnologias utilizdas: HTML, CSS e JavaScript</p>
                         <ul class="acesse">
                             <li><a href="https://alura-books2-delta.vercel.app/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/alura-books2" target="_blank">Veja o código</a></li>
                         </ul>
-                    </div>
-                </div>
+                </div> -->
 
-                <!-- 
-                    <div class="projeto">
-                    <img src="" alt="">
-                    <div class="descricao">
-                        <h3></h3>
-                        <p></p>
-                        <p>Tecnologias utilizdas: HTML, CSS</p>
-                        <ul class="acesse">
-                            <li><a href="#" target="_blank">Acesse o deploy</a></li>
-                            <li><a href="#" target="_blank">Veja o código</a></li>
-                        </ul>
-                    </div>
-                </div>
-                 -->
+                 
                 <!-- <div class="projeto">
-                    <img src="imagens/p-nsec.png" alt="Imagem do projeto número screto" class="img-projeto">
-                    <div class="descricao">
+                    
                         <h3>Jogo Número Secreto</h3>
                         <p>Projeto realizado em formação da Alura utilizando JavaScript para sortear um número a ser adivinhado utilizando o microfone.</p>
+                        <img src="imagens/p-nsec.png" alt="Imagem do projeto número screto" class="img-projeto">
                         <p>Tenologias utilizadas: HTML, CSS e JavaScript</p>
                         <ul class="acesse">
                             <li><a href="https://jogo-numero-secreto-nine-kappa.vercel.app/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/jogo-numero-secreto" target="_blank">Veja o código</a></li>
                         </ul>
-                    </div>
                 </div> -->
+
                 <!-- <div class="projeto">
-                    <img src="imagens/p-amidi.png" alt="Imagem do projeto Alura Midi" class="img-projeto">
-                    <div class="descricao">
                         <h3>Alura Midi</h3>
                         <p>Projeto realizado durante formação da Alura utilizando JavaScript para reproduzir um som específico ao clicar em qualque um dos botões da tela.</p>
                         <p>Tenologias utilizadas: HTML, CSS e JavaScript</p>
-
+                        <img src="imagens/p-amidi.png" alt="Imagem do projeto Alura Midi" class="img-projeto">
                         <ul class="acesse">
                             <li><a href="https://regianegaspar.github.io/alura-midi/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/alura-midi" target="_blank">Veja o código</a></li>
-                            
                         </ul>
-                    </div>
                 </div> -->
-                <!-- <div class="projeto">
-                    <img src="imagens/p-moch.png" alt="Imagem do projeto Mochila de viagem" class="img-projeto">
-                    <div class="descricao">
+<!-- 
+                <div class="projeto">
+                    
                         <h3>Mochila de viagem</h3>
                         <p>Projeto realizado em formação da Alura para adicionar itens, atualizar ou remover itens de uma lista usando JavaScript.</p>
+                        <img src="imagens/p-moch.png" alt="Imagem do projeto Mochila de viagem" class="img-projeto">
                         <p>Tenologias utilizadas: HTML, CSS e JavaScript</p>
 
                         </ul>
                         <ul class="acesse">
                             <li><a href="https://regianegaspar.github.io/mochila/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/mochila" target="_blank">Veja o código</a></li>
-                            
                         </ul>
-                    </div>
+
                 </div> -->
-                <div class="projeto">
-                    <img src="imagens/p-ami.png" alt="Imagem do projeto Amigurumis" class="img-projeto">
-                    <div class="descricao">
+                <!-- <div class="projeto">
+
                         <h3>Amigurumis</h3>
                         <p>Landing page fictícia criada utilizando HTML e CSS para colocar em prática estudos sobre display flex.</p>
+                        <img src="imagens/p-ami.png" alt="Imagem do projeto Amigurumis" class="img-projeto">
                         <p>Tenologias utilizadas: HTML e CSS</p>
 
                         <ul class="acesse">
@@ -182,15 +229,15 @@
                             <li><a href="https://github.com/regianegaspar/ami" target="_blank">Veja o código</a></li>
                             
                         </ul>
-                    </div>
-                </div>
+
+                </div> -->
+
                 <div class="projeto">
                     <img src="imagens/kj.gif" alt="Imagem do projeto Katherine Johnson" class="img-projeto">
-                    <div class="descricao">
+                    <div class="informacoes">
                         <h3>Katherine Johnson</h3>
                         <p>Página criada utilizando HTML, CSS e JavaScript como conclusão do curso Programação Web para Iniciantes da WoMakers Code.</p>
-                        <p>Tenologias utilizadas: HTML e CSS</p>
-
+                        <p>HTML e CSS</p>
                         <ul class="acesse">
                             <li><a href="https://regianegaspar.github.io/k-johnson/" target="_blank">Acesse o deploy</a></li>
                             <li><a href="https://github.com/regianegaspar/k-johnson" target="_blank">Veja o código</a></li>
@@ -198,11 +245,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="projeto">
-                    <img src="imagens/cordel.gif" alt="Imagem do projeto Cordel" class="img-projeto">
-                    <div class="descricao">
+
+                <!-- <div class="projeto">
+
                         <h3>Cordel</h3>
                         <p>Site Parallax criado durante o curso HMTL5 e CSS3 do Curso em Vídeo</p>
+                        <img src="imagens/cordel.gif" alt="Imagem do projeto Cordel" class="img-projeto">
                         <p>Tenologias utilizadas: HTML e CSS</p>
 
                         <ul class="acesse">
@@ -210,13 +258,16 @@
                             <li><a href="https://github.com/regianegaspar/projeto-cordel" target="_blank">Veja o código</a></li>
                             
                         </ul>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <div class="descricao">
+
+                </div> -->
+
+                <!-- <div class="projeto">
+
+                    
                         <h3>Culturama</h3>
-                        <img src="imagens/p-cult.png" alt="Imagem do projeto Culturama" class="img-projeto">
+                        
                         <p>Projeto criado durante formação da Alura sobre display flex e grid.</p>
+                        <img src="imagens/p-cult.png" alt="Imagem do projeto Culturama" class="img-projeto">
                         <p>Tenologias utilizadas: HTML e CSS</p>
 
                         <ul class="acesse">
@@ -224,9 +275,13 @@
                             <li><a href="https://github.com/regianegaspar/culturama" target="_blank">Veja o código</a></li>
                             
                         </ul>
-                    </div>
-                </div>
-            </aside>
+
+                        
+                </div> -->
+                
+                  
+            </div>
+            <button><a href="https://github.com/regianegaspar?tab=repositories">Veja mais projetos em meu GitHub</a></button>
         </section>
 
         <section class="estudos">
@@ -239,7 +294,7 @@
                 </div>
                 <div class="estudo">
                     <h3>Licenciatura</h3>
-                    <p><strong>Matenática</strong> - USP (ICMC)</p>
+                    <p><strong>Matemática</strong> - USP (ICMC)</p>
                     <p>2004 - 2008</p>
                 </div>
                 <div class="estudo">
