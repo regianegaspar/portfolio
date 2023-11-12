@@ -51,10 +51,33 @@ main{
     z-index: 1;
 }
 
-.menu > a{
+.menu a{
+    border:1px solid transparent; 
     color: var(--branco1);
+    position: relative;
     text-decoration: none;
 }
+
+.menu a:hover{
+    border-color: transparent;
+}
+
+.menu a::after {
+    background-color: var(--branco2);
+    bottom: 0;
+    content: "";
+    height: 0.5px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+
 
 /* SOBRE */
 
@@ -197,18 +220,55 @@ h2{
     background: var(--preto);
     color: var(--branco2);
     box-shadow: 2px 2px 2px #000000ac;
-    
 }
 
-.veja-mais > a{
-    color: var(--preto);
-    font-size: 1.5em;
-    padding: 30px;
+.veja{
+    border-top: 1px dotted var(--branco1);
+    display: inline-block;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
 }
 
+.veja button{
+    background-color: var(--cinza1);
+    border: 1px solid var(--branco2);
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 1s ease;
+}
 
+.veja a{
+    color: var(--branco2);
+}
 
+.veja a:hover{
+    color: var(--cinza1);
+}
 
+.veja button:hover{
+    transform: translateX(10px);
+}
+
+.veja button::after{
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform: scale(.1);
+    transition: all 0.3s ease;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    -webkit-transform: scale(.1);
+}
+
+.veja button:hover::after{
+    background-color: var(--branco2);
+    border-radius: 10px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
 
 /* ESTUDOS */
 .estudos > aside{
